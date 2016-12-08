@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>The Splurty App, by Jim Hinckley</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class="col-xs-3">
+      LOGO
+    </div>
+      <div class="col-xs-4">
+        Splurting out clever quotes and advice for nearly a hundredth of a century
+      </div>
+      <div class="col-xs-5">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+  </header>
+
+  <br class="clear" />
 
 <%= yield %>
 

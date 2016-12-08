@@ -41,15 +41,33 @@ header {
 }
 
 .links a {
-  color: black;
+  color: white;
   border-bottom: 1px solid #888;
+  background-color: green;
+  border-radius:18px;
+  padding:3px 10px;
+  margin-right:16px;
 }
 
 .links a:hover {
-  color:green;
+  color:white;
   text-decoration: none;
+  background-color: #000;
 }
 
 hr {
+  background-color:green;
   clear:both;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Georgia, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -56,18 +57,17 @@ header {
 }
 
 hr {
-  background-color:green;
   clear:both;
 }
 
 h1 {
-  font-family: "Helvetica Neue", Georgia, Helvetica, sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 600;
   letter-spacing: -1.5px;
 }
 
 h2 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 600;
   letter-spacing: -1.5px;
 }

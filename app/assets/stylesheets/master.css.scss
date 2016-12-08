@@ -1,6 +1,55 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+header {
+  border-top: 8px solid darkgreen;
+}
+
 .clear {
+  clear:both;
+}
+
+.circle {
+    font-weight:bold;
+    font-style: italic;
+    padding: 14px;
+    position: relative;
+    border-radius: 100%;
+    background: radial-gradient(yellow,darkgreen);
+    border: 1px solid green;
+    width: 110px;
+    height: 80px;
+    margin: 15px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 110%;
+    text-shadow:1px 1px 2px darkgreen;
+    line-height: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform:rotate(-12deg);
+    -ms-transform:rotate(-12deg); /* IE 9 */
+    -webkit-transform:rotate(-12deg); /* Opera, Chrome, and Safari */
+}
+
+.slogan, .links {
+  font-size: 110%;
+  padding-top:2%;
+  text-align:center;
+  /* Modern Georgia-based serif stack */
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.links a {
+  color: black;
+  border-bottom: 1px solid #888;
+}
+
+.links a:hover {
+  color:green;
+  text-decoration: none;
+}
+
+hr {
   clear:both;
 }

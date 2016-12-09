@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -43,10 +43,12 @@ header {
 
 .links a {
   color: white;
+  font-family: 'charis_silregular', serif;
+  /* font-weight: bold; */
   border-bottom: 1px solid #888;
   background-color: green;
   border-radius:18px;
-  padding:3px 10px;
+  padding:0 10px;
   margin-right:16px;
 }
 
@@ -62,12 +64,19 @@ hr {
 
 h1 {
   color:darkgreen;
-  font-family: 'Libre Baskerville', serif;
+/*  font-family: 'Libre Baskerville', serif;  <-- Google font */
+  font-family: 'charis_silregular', serif;  /* FontSquirrel font, NOT Google font */
+  font-weight: bold;
+  font-size: 45px;
   letter-spacing: -0.8px;
   line-height: 1.4em;
 }
 
 h2 {
-  font-family: 'Libre Baskerville', serif;
+/*  font-family: 'Libre Baskerville', serif; <-- Google font */
+  font-family: 'charis_silregular', serif;  /* FontSquirrel font, NOT Google font */
+  font-style: italic;
+  font-weight: bold;
+  font-size: 36px;
   letter-spacing: -0.8px;
 }

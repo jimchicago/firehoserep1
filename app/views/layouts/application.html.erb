@@ -15,10 +15,10 @@
         </div>
       <% end %>
     </div>
-    <div class="col-xs-4 slogan">
+    <div class="col-xs-4 hidden-xs slogan">
         Splurting out clever quotes and dubious advice for nearly a hundredth of a century
     </div>
-    <div class="col-xs-5 links">
+    <div class="col-xs-offset-1 col-sm-offset-0 col-xs-5 links">
       <!-- Button to trigger modal -->
       <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
       <%= link_to 'About', about_path %>
@@ -32,12 +32,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote Below:</h4>
+          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote:</h4>
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, label: "Type the quote you want to display (3 to 200 characters):", placeholder: "Text of quote" %><br />
+            <%= f.input :author, label: "Name of person who said it (3 to 200 characters):", placeholder: "Who said it?" %>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -63,11 +63,11 @@
 
   <div class="footer">
     <div class="container">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
-      <div class="col-xs-6 footer-blurb">
-      <p class="text-muted">This app is brought to you by Jim Hinckley <a href="http://www.jhwm.net">(JH Web Marketing Inc)</a>, web developer and Firehose Project student.</p>
+      <div class="col-xs-12 col-sm-6 footer-blurb">
+      <p class="text-muted">This app is brought to you by <a href="http://www.jhwm.net">Jim Hinckley</a>, web developer and Firehose Project student.</p>
       </div>
     </div>
   </div>
